@@ -2,6 +2,8 @@
 
 Guarda aquí los Markdown producidos en ChatGPT u otra herramienta antes de pedir a un agente que actualice el seguimiento.
 
+Para generar el informe en ChatGPT, adjunta o copia primero `plantillas/INSTRUCCIONES_CHATGPT_REPORTE_AVANCE.md` junto con las notas de la sesión. ChatGPT debe devolver solamente un reporte con el formato indicado allí.
+
 Convención:
 
 ```text
@@ -17,4 +19,3 @@ Lee AGENTS.md y procesa el informe
 actualizaciones/2026/2026-08-23-avance-bibliografia.md.
 Actualiza las fuentes de verdad, valida el repositorio y resume los cambios.
 ```
-

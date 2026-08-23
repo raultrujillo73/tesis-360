@@ -33,6 +33,8 @@ npm test
 
 Si el avance llega como un informe generado en ChatGPT, guárdalo primero en `actualizaciones/YYYY/` y pide al agente que lea `AGENTS.md` y lo procese.
 
+La guía para que ChatGPT genere ese informe está en `plantillas/INSTRUCCIONES_CHATGPT_REPORTE_AVANCE.md`.
+
 ## Cloudflare Pages
 
 Configurar el repositorio con:
