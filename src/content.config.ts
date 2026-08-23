@@ -100,5 +100,14 @@ const currentStatus = defineCollection({
   }),
 });
 
-export const collections = { phases, milestones, decisions, logs, sources, currentStatus };
+const diagnostics = defineCollection({
+  loader: glob({ pattern: '*.md', base: './investigacion/estado-del-arte' }),
+  schema: z.object({
+    title: z.string(),
+    version: z.string().default(''),
+    fecha: z.coerce.date(),
+    estado: z.string().default(''),
+  }),
+});
 
+export const collections = { phases, milestones, decisions, logs, sources, currentStatus, diagnostics };

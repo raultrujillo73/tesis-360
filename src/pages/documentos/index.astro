@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { formatDate } from '@/lib/project';
+
+const diagnostics = (await getCollection('diagnostics')).sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
+---
+
+<BaseLayout title="Documentos académicos">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">Investigación</div>
+      <h1>Documentos académicos</h1>
+      <p class="lede">Diagnósticos y documentos de trabajo que sustentan el avance de la investigación.</p>
+    </div>
+  </header>
+  <div class="card">
+    {diagnostics.length ? (
+      <ul class="list">
+        {diagnostics.map((entry) => (
+          <li class="list-item">
+            <div class="list-item__main">
+              <a href={`/documentos/${entry.id}`}><strong>{entry.data.title}</strong></a>
+              <div class="list-item__meta">{entry.data.estado || 'Documento de trabajo'}</div>
+            </div>
+            <time class="muted" datetime={entry.data.fecha.toISOString()}>{formatDate(entry.data.fecha)}</time>
+          </li>
+        ))}
+      </ul>
+    ) : <p class="empty">No hay documentos académicos publicados.</p>}
+  </div>
+</BaseLayout>
+

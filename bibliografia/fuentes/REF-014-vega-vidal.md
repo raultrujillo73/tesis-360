@@ -9,14 +9,13 @@ doi: ""
 openalex: ""
 url: ""
 priority: P0
-download_status: pendiente
-reading_status: pendiente
-analysis_status: pendiente
+download_status: terminada
+reading_status: terminada
+analysis_status: terminada
 topics: [tesis-peruana]
 intended_use: [antecedentes, referencia-metodologica]
 ---
 
 # Ficha
 
-Tesis prioritaria indicada en el Plan Maestro. Universidad, título, año y análisis pendientes.
-
+Analizada y comparada como antecedente nacional. Confirma antecedentes peruanos de 360°, obra, visualización, recorridos y guía técnica; universidad, título, año y referencia final siguen por verificar.

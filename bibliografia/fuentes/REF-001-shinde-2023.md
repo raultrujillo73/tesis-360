@@ -9,14 +9,13 @@ doi: ""
 openalex: ""
 url: ""
 priority: P0
-download_status: pendiente
-reading_status: pendiente
-analysis_status: pendiente
+download_status: terminada
+reading_status: terminada
+analysis_status: terminada
 topics: [estado-del-arte-360]
 intended_use: [estado-del-arte, brecha]
 ---
 
 # Ficha
 
-Referencia prioritaria identificada en el Plan Maestro. Metadatos y análisis pendientes de verificación contra la fuente original.
-
+Analizada como parte de la primera ronda internacional y de la comparación transversal del estado del arte. Los metadatos completos aún deben verificarse contra la fuente original.

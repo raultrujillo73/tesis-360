@@ -7,10 +7,10 @@ objective: reunir las fuentes que sustentarán la investigación.
 tasks:
   - id: F1-T01
     title: Descargar bibliografía internacional prioritaria
-    status: en_curso
+    status: terminada
     priority: P0
     responsible: R
-    deliverable: null
+    deliverable: Primera ronda internacional disponible y utilizada para análisis, fichas y comparación transversal.
     completion_criteria: primera ronda disponible para análisis.
     notes: |-
       - **Lista inicial:** Shinde et al. 2023; Brilakis et al. 2005; Brilakis & Soibelman 2006; Wu & Tory/PhotoScope; Eiris et al. 2017; Eiris & Gheisari 2019; Fobiri et al. 2022; Pal & Hsieh 2021; Erazo-Rondinel & Melgar 2024; Taha et al. 2025; Adegoke et al. 2026.

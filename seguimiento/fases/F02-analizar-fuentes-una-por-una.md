@@ -2,20 +2,20 @@
 id: F2
 order: 2
 title: ANALIZAR FUENTES UNA POR UNA
-status: pendiente
+status: en_curso
 objective: pasar de “tener PDFs” a “tener conocimiento trazable”.
 tasks:
   - id: F2-T01
     title: Crear sesión de papers internacionales
-    status: pendiente
+    status: terminada
     priority: null
     responsible: R
-    deliverable: null
+    deliverable: Sesión 01 — Papers internacionales creada y utilizada para analizar la primera ronda de fuentes.
     completion_criteria: null
     notes: "- **Acción:** crear chat separado en este proyecto y subir allí fuentes por grupos manejables."
   - id: F2-T02
     title: Analizar cada paper con ficha estándar
-    status: pendiente
+    status: en_curso
     priority: null
     responsible: R+GPT
     deliverable: null
@@ -53,7 +53,7 @@ tasks:
       ```
   - id: F2-T03
     title: Analizar tesis peruanas
-    status: pendiente
+    status: en_curso
     priority: null
     responsible: R+GPT
     deliverable: null

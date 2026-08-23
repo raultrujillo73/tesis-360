@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { formatDate } from '@/lib/project';
+
+export async function getStaticPaths() {
+  return (await getCollection('diagnostics')).map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={entry.data.title}>
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">Documento académico · {formatDate(entry.data.fecha)}</div>
+      <h1>{entry.data.title}</h1>
+      <p class="lede">{entry.data.estado}</p>
+    </div>
+  </header>
+  <article class="prose"><Content /></article>
+</BaseLayout>
+

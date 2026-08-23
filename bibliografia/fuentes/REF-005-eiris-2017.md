@@ -9,14 +9,13 @@ doi: ""
 openalex: ""
 url: ""
 priority: P0
-download_status: pendiente
-reading_status: pendiente
-analysis_status: pendiente
-topics: [estado-del-arte-360]
-intended_use: [antecedentes, estado-del-arte]
+download_status: terminada
+reading_status: terminada
+analysis_status: terminada
+topics: [estado-del-arte-360, workflow-360]
+intended_use: [antecedentes, estado-del-arte, d1]
 ---
 
 # Ficha
 
-Fuente prioritaria identificada en el Plan Maestro. Referencia exacta y análisis pendientes.
-
+Revisada focalizadamente durante el cierre exploratorio. El workflow panorámico respalda captura, authoring, inmersión y distribución, pero no formaliza en el paper una gestión documental longitudinal completa. La referencia bibliográfica final aún debe verificarse.

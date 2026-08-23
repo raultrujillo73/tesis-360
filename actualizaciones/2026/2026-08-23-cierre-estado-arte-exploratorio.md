@@ -2,7 +2,8 @@
 tipo: informe-de-avance
 fecha: 2026-08-23
 origen: ChatGPT
-estado_procesamiento: pendiente
+estado_procesamiento: procesado
+procesado_el: 2026-08-23
 ---
 
 # Avance — Cierre del estado del arte exploratorio y preparación de D1
@@ -153,7 +154,6 @@ estado_procesamiento: pendiente
 ## Criterio final
 
 El avance verificable corresponde al cierre práctico de una etapa extensa de exploración bibliográfica y a la preparación del material necesario para D1. La recomendación de pasar formalmente a D1 se mantiene como propuesta hasta que Raúl la confirme o inicie.
-
 
 
 
