@@ -18,7 +18,7 @@ tasks:
     status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: Diagnóstico integrado con el mapa de componentes ya establecidos.
+    deliverable: Diagnóstico integrado y adenda Bahakim con el mapa actualizado de componentes ya establecidos.
     completion_criteria: null
     notes: null
   - id: F4-T03
@@ -26,7 +26,7 @@ tasks:
     status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: Diagnóstico integrado con límites explícitos de novedad.
+    deliverable: Diagnóstico integrado y adenda Bahakim con límites explícitos de novedad y diferenciación.
     completion_criteria: null
     notes: null
   - id: F4-T04
@@ -36,13 +36,13 @@ tasks:
     responsible: R+GPT
     deliverable: null
     completion_criteria: null
-    notes: null
+    notes: Bahakim (2023) debilita fuertemente el territorio basado en metodología longitudinal 360°; las hipótesis de brecha requieren revisión antes de formular candidatas.
   - id: F4-T05
     title: Intentar refutar cada brecha
     status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: Búsqueda bibliográfica dirigida, verificación final acotada y análisis focalizados de antecedentes relevantes.
+    deliverable: Búsqueda bibliográfica dirigida, verificación final acotada y análisis focalizados, incluida la incorporación posterior de Bahakim (2023).
     completion_criteria: null
     notes: "- **Regla:** buscar deliberadamente fuentes que contradigan nuestra supuesta novedad."
   - id: F4-T06

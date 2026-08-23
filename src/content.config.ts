@@ -107,6 +107,7 @@ const diagnostics = defineCollection({
     version: z.string().default(''),
     fecha: z.coerce.date(),
     estado: z.string().default(''),
+    documento_base: z.string().optional(),
   }),
 });
 

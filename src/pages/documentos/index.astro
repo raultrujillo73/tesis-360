@@ -4,6 +4,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import { formatDate } from '@/lib/project';
 
 const diagnostics = (await getCollection('diagnostics')).sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
+const diagnosticsByFile = new Map(diagnostics.map((entry) => [`${entry.id}.md`.toLowerCase(), entry]));
 ---
 
 <BaseLayout title="Documentos académicos">
@@ -18,16 +19,21 @@ const diagnostics = (await getCollection('diagnostics')).sort((a, b) => b.data.f
     {diagnostics.length ? (
       <ul class="list">
         {diagnostics.map((entry) => (
+          (() => {
+            const base = entry.data.documento_base ? diagnosticsByFile.get(entry.data.documento_base.toLowerCase()) : undefined;
+            return (
           <li class="list-item">
             <div class="list-item__main">
               <a href={`/documentos/${entry.id}`}><strong>{entry.data.title}</strong></a>
               <div class="list-item__meta">{entry.data.estado || 'Documento de trabajo'}</div>
+              {base && <div class="list-item__meta">Adenda de: <a href={`/documentos/${base.id}`}>{base.data.title}</a></div>}
             </div>
             <time class="muted" datetime={entry.data.fecha.toISOString()}>{formatDate(entry.data.fecha)}</time>
           </li>
+            );
+          })()
         ))}
       </ul>
     ) : <p class="empty">No hay documentos académicos publicados.</p>}
   </div>
 </BaseLayout>
-

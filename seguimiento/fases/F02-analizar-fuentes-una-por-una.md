@@ -21,6 +21,7 @@ tasks:
     deliverable: null
     completion_criteria: null
     notes: |-
+      - Avance registrado: Bahakim (2023) fue analizado focalizadamente como antecedente internacional núcleo y muy cercano.
       ```text
       REFERENCIA
       PREGUNTA / PROBLEMA

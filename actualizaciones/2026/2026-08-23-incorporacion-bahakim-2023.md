@@ -2,7 +2,8 @@
 tipo: informe-de-avance
 fecha: 2026-08-23
 origen: ChatGPT
-estado_procesamiento: pendiente
+estado_procesamiento: procesado
+procesado_el: 2026-08-23
 ---
 
 # Avance — Incorporación de Bahakim (2023) y corrección del diagnóstico previo a D1
