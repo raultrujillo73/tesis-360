@@ -1,0 +1,17 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { formatDate } from '@/lib/project';
+export async function getStaticPaths() {
+  return (await getCollection('logs')).map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={entry.data.title}>
+  <header class="page-header"><div><div class="eyebrow">Log · {formatDate(entry.data.date)}</div><h1>{entry.data.title}</h1><p class="lede">{entry.data.summary}</p></div></header>
+  <article class="prose"><Content /></article>
+  {(entry.data.tasks.length > 0 || entry.data.decisions.length > 0) && <div class="card section"><strong>Referencias:</strong> {[...entry.data.tasks, ...entry.data.decisions].join(', ')}</div>}
+</BaseLayout>
+

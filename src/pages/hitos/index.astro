@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+const milestones = (await getCollection('milestones')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<BaseLayout title="Hitos">
+  <header class="page-header"><div><div class="eyebrow">Puertas de decisión</div><h1>Hitos</h1><p class="lede">Condiciones que deben cumplirse antes de cerrar decisiones o avanzar hacia actividades irreversibles.</p></div></header>
+  <div class="grid grid--2">
+    {milestones.map((entry) => (
+      <article class="card">
+        <div class="section-heading"><span class="eyebrow">Después de {entry.data.after_phase}</span><StatusBadge status={entry.data.status} /></div>
+        <h2><a href={`/hitos/${entry.data.id}`}>{entry.data.id} · {entry.data.title}</a></h2>
+      </article>
+    ))}
+  </div>
+</BaseLayout>
+

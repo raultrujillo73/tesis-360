@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+import ProgressBar from '@/components/ProgressBar.astro';
+import { progress } from '@/lib/project';
+export async function getStaticPaths() {
+  return (await getCollection('phases')).map((entry) => ({ params: { id: entry.data.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const phaseProgress = progress(entry.data.tasks);
+---
+
+<BaseLayout title={`${entry.data.id} — ${entry.data.title}`}>
+  <header class="page-header"><div><div class="eyebrow">Fase {entry.data.order}</div><h1>{entry.data.id} — {entry.data.title}</h1><p class="lede">{entry.data.objective}</p></div><StatusBadge status={entry.data.status} /></header>
+  <div class="card">
+    <div class="section-heading"><strong>{phaseProgress.done} de {phaseProgress.total} tareas terminadas</strong><span>{phaseProgress.percent}%</span></div>
+    <ProgressBar value={phaseProgress.percent} />
+  </div>
+  <section class="section">
+    <div class="card">
+      <ul class="list">
+        {entry.data.tasks.map((task) => (
+          <li class="list-item">
+            <div class="list-item__main">
+              <h3><span class="mono">{task.id}</span> · {task.title}</h3>
+              <div class="list-item__meta">Prioridad {task.priority ?? '—'} · {task.responsible ?? 'Responsable por confirmar'}</div>
+              {task.deliverable && <p><strong>Entregable:</strong> {task.deliverable}</p>}
+              {task.completion_criteria && <p><strong>Criterio de cierre:</strong> {task.completion_criteria}</p>}
+            </div>
+            <StatusBadge status={task.status} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+

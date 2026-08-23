@@ -1,0 +1,105 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+import ProgressBar from '@/components/ProgressBar.astro';
+import { formatDate, progress } from '@/lib/project';
+
+const [phases, milestones, decisions, logs, sources, currentEntries] = await Promise.all([
+  getCollection('phases'),
+  getCollection('milestones'),
+  getCollection('decisions'),
+  getCollection('logs'),
+  getCollection('sources'),
+  getCollection('currentStatus'),
+]);
+const current = currentEntries[0].data;
+const orderedPhases = phases.sort((a, b) => a.data.order - b.data.order);
+const allTasks = orderedPhases.flatMap((phase) => phase.data.tasks.map((task) => ({ ...task, phase: phase.data })));
+const overall = progress(allTasks);
+const researchPhase = orderedPhases.find((phase) => phase.data.id === current.research_phase)?.data;
+const nextTask = allTasks.find((task) => task.id === current.next_task);
+const nextMilestone = milestones.find((item) => item.data.id === current.next_milestone)?.data;
+const openDecisions = decisions.filter((item) => ['pendiente', 'provisional'].includes(item.data.status));
+const latestLogs = logs.sort((a, b) => b.data.date.getTime() - a.data.date.getTime()).slice(0, 4);
+const analyzedSources = sources.filter((source) => source.data.analysis_status === 'terminada').length;
+---
+
+<BaseLayout title="Estado actual">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">Estado actual · {formatDate(current.last_updated)}</div>
+      <h1>{researchPhase?.id} — {researchPhase?.title}</h1>
+      <p class="lede">{current.summary}</p>
+    </div>
+    <StatusBadge status={researchPhase?.status ?? 'pendiente'} />
+  </header>
+
+  <section class="grid grid--metrics" aria-label="Indicadores generales">
+    <article class="card card--accent">
+      <span class="metric__label">Progreso por tareas</span>
+      <strong class="metric__value">{overall.percent}%</strong>
+      <ProgressBar value={overall.percent} />
+      <span class="metric__label">{overall.done} de {overall.total} terminadas</span>
+    </article>
+    <article class="card">
+      <span class="metric__label">Fuentes registradas</span>
+      <strong class="metric__value">{sources.length}</strong>
+      <span class="metric__label">{analyzedSources} analizadas</span>
+    </article>
+    <article class="card">
+      <span class="metric__label">Decisiones abiertas</span>
+      <strong class="metric__value">{openDecisions.length}</strong>
+      <span class="metric__label">pendientes o provisionales</span>
+    </article>
+    <article class="card">
+      <span class="metric__label">Bloqueadores</span>
+      <strong class="metric__value">{current.blockers.length}</strong>
+      <span class="metric__label">registrados actualmente</span>
+    </article>
+  </section>
+
+  <section class="grid grid--2 section">
+    <article class="card">
+      <div class="eyebrow">Siguiente tarea</div>
+      <h2><span class="mono">{nextTask?.id}</span> · {nextTask?.title}</h2>
+      <p class="muted">Fase {nextTask?.phase.id} · Prioridad {nextTask?.priority ?? 'sin asignar'} · {nextTask?.responsible ?? 'responsable por confirmar'}</p>
+      <a href="/tareas">Ver todas las tareas →</a>
+    </article>
+    <article class="card">
+      <div class="eyebrow">Próximo hito</div>
+      <h2><span class="mono">{nextMilestone?.id}</span> · {nextMilestone?.title}</h2>
+      <p class="muted">Situado después de {nextMilestone?.after_phase} en el roadmap.</p>
+      <a href="/hitos">Ver condiciones del hito →</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <div class="section-heading"><h2>Actividad reciente</h2><a href="/log">Ver log completo</a></div>
+    <div class="card">
+      <ul class="list">
+        {latestLogs.map((entry) => (
+          <li class="list-item">
+            <div class="list-item__main">
+              <a href={`/log/${entry.id}`}>{entry.data.title}</a>
+              <div class="list-item__meta">{entry.data.summary}</div>
+            </div>
+            <time class="muted" datetime={entry.data.date.toISOString()}>{formatDate(entry.data.date)}</time>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section grid grid--2">
+    <article class="card">
+      <div class="section-heading"><h2>Preguntas pendientes</h2></div>
+      <ul>{current.pending_questions.map((question) => <li>{question}</li>)}</ul>
+    </article>
+    <article class="card">
+      <div class="section-heading"><h2>Bloqueadores</h2></div>
+      {current.blockers.length ? <ul>{current.blockers.map((blocker) => <li>{blocker}</li>)}</ul> : <p class="muted">No hay bloqueadores registrados.</p>}
+    </article>
+  </section>
+</BaseLayout>
+

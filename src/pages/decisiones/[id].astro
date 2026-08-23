@@ -1,0 +1,23 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+import { formatDate } from '@/lib/project';
+
+export async function getStaticPaths() {
+  return (await getCollection('decisions')).map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={entry.data.title}>
+  <header class="page-header"><div><div class="eyebrow">{entry.data.id} · {formatDate(entry.data.date)}</div><h1>{entry.data.title}</h1></div><StatusBadge status={entry.data.status} /></header>
+  <div class="grid grid--2">
+    <article class="card"><h2>Motivo</h2><p>{entry.data.reason}</p></article>
+    <article class="card"><h2>Impacto</h2><p>{entry.data.impact}</p></article>
+  </div>
+  <article class="prose section"><Content /></article>
+  {entry.data.related_tasks.length > 0 && <p class="muted">Tareas relacionadas: {entry.data.related_tasks.join(', ')}</p>}
+</BaseLayout>
+

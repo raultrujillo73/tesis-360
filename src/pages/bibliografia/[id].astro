@@ -1,0 +1,24 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+export async function getStaticPaths() {
+  return (await getCollection('sources')).map((entry) => ({ params: { id: entry.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={entry.data.title}>
+  <header class="page-header"><div><div class="eyebrow">{entry.data.id} · {entry.data.type}</div><h1>{entry.data.title}</h1><p class="lede">{entry.data.authors}{entry.data.year ? ` · ${entry.data.year}` : ''}{entry.data.venue ? ` · ${entry.data.venue}` : ''}</p></div></header>
+  <section class="grid grid--metrics">
+    <article class="card"><span class="metric__label">Descarga</span><div class="section"><StatusBadge status={entry.data.download_status} /></div></article>
+    <article class="card"><span class="metric__label">Lectura</span><div class="section"><StatusBadge status={entry.data.reading_status} /></div></article>
+    <article class="card"><span class="metric__label">Análisis</span><div class="section"><StatusBadge status={entry.data.analysis_status} /></div></article>
+    <article class="card"><span class="metric__label">Prioridad</span><strong class="metric__value">{entry.data.priority}</strong></article>
+  </section>
+  <div class="tags section">{entry.data.topics.map((topic) => <span class="tag">{topic}</span>)}</div>
+  <article class="prose section"><Content /></article>
+  {(entry.data.doi || entry.data.openalex || entry.data.url) && <div class="card section"><h2>Enlaces</h2><ul>{entry.data.doi && <li>DOI: {entry.data.doi}</li>}{entry.data.openalex && <li><a href={entry.data.openalex}>OpenAlex</a></li>}{entry.data.url && <li><a href={entry.data.url}>Fuente</a></li>}</ul></div>}
+</BaseLayout>
+

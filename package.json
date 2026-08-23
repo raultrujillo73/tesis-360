@@ -1,0 +1,24 @@
+{
+  "name": "tesis-360-seguimiento",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "npm run validate && astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "validate": "node scripts/validate-content.mjs",
+    "check:build": "node scripts/check-build.mjs",
+    "test": "npm run validate && npm run check && astro build && npm run check:build"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.6",
+    "astro": "^7.2.4",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "yaml": "^2.8.1"
+  }
+}

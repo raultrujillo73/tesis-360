@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { formatDate } from '@/lib/project';
+const logs = (await getCollection('logs')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout title="Log cronológico">
+  <header class="page-header"><div><div class="eyebrow">Historial</div><h1>Log cronológico</h1><p class="lede">Sesiones, entregables, cambios y acontecimientos relevantes, del más reciente al más antiguo.</p></div></header>
+  <div class="card">
+    <ul class="list">
+      {logs.map((entry) => (
+        <li class="list-item">
+          <div class="list-item__main"><a href={`/log/${entry.id}`}>{entry.data.title}</a><div class="list-item__meta">{entry.data.summary}</div></div>
+          <time class="muted" datetime={entry.data.date.toISOString()}>{formatDate(entry.data.date)}</time>
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+

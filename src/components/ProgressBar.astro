@@ -1,0 +1,10 @@
+---
+interface Props { value: number; label?: string }
+const { value, label } = Astro.props;
+const normalized = Math.max(0, Math.min(100, value));
+---
+
+<div class="progress" aria-label={label ?? `Progreso: ${normalized}%`}>
+  <span class="progress__bar" style={`width:${normalized}%`}></span>
+</div>
+

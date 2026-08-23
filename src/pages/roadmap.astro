@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+import ProgressBar from '@/components/ProgressBar.astro';
+import { progress } from '@/lib/project';
+
+const phases = (await getCollection('phases')).sort((a, b) => a.data.order - b.data.order);
+const milestones = await getCollection('milestones');
+---
+
+<BaseLayout title="Roadmap">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">Ruta completa</div>
+      <h1>Roadmap de la investigación</h1>
+      <p class="lede">De la infraestructura inicial a la entrega y sustentación. El avance se calcula desde las 174 tareas del Plan Maestro.</p>
+    </div>
+  </header>
+
+  <div class="roadmap">
+    {phases.map((phase) => {
+      const phaseProgress = progress(phase.data.tasks);
+      const milestone = milestones.find((item) => item.data.after_phase === phase.data.id);
+      return (
+        <>
+          <article class="phase">
+            <div class="phase__marker">{phase.data.id}</div>
+            <div class="card">
+              <div class="phase__header">
+                <div>
+                  <div class="eyebrow">Fase {phase.data.order}</div>
+                  <h2><a href={`/fases/${phase.data.id}`}>{phase.data.title}</a></h2>
+                  {phase.data.objective && <p class="muted">{phase.data.objective}</p>}
+                  <StatusBadge status={phase.data.status} />
+                </div>
+                <div class="phase__stats">
+                  <strong>{phaseProgress.done}/{phaseProgress.total}</strong>
+                  <div class="muted">tareas</div>
+                  <ProgressBar value={phaseProgress.percent} />
+                </div>
+              </div>
+            </div>
+          </article>
+          {milestone && (
+            <aside class="milestone">
+              <strong><a href={`/hitos/${milestone.data.id}`}>{milestone.data.id} · {milestone.data.title}</a></strong>
+              <div><StatusBadge status={milestone.data.status} /></div>
+            </aside>
+          )}
+        </>
+      );
+    })}
+  </div>
+</BaseLayout>
+

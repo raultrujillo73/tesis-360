@@ -1,0 +1,16 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+export async function getStaticPaths() {
+  return (await getCollection('milestones')).map((entry) => ({ params: { id: entry.data.id }, props: { entry } }));
+}
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={entry.data.title}>
+  <header class="page-header"><div><div class="eyebrow">{entry.data.id} · después de {entry.data.after_phase}</div><h1>{entry.data.title}</h1></div><StatusBadge status={entry.data.status} /></header>
+  <article class="prose"><Content /></article>
+</BaseLayout>
+

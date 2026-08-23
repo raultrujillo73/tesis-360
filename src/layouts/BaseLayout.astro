@@ -1,0 +1,54 @@
+---
+import '@/styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Seguimiento de la tesis 360°' } = Astro.props;
+const currentPath = Astro.url.pathname;
+const navigation = [
+  ['/', 'Estado'],
+  ['/roadmap', 'Roadmap'],
+  ['/tareas', 'Tareas'],
+  ['/decisiones', 'Decisiones'],
+  ['/log', 'Log'],
+  ['/bibliografia', 'Bibliografía'],
+  ['/hitos', 'Hitos'],
+];
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#12221d" />
+    <title>{title} · Tesis 360°</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header">
+      <div class="shell site-header__inner">
+        <a class="brand" href="/" aria-label="Inicio de Tesis 360°">
+          <span class="brand__mark">360°</span>
+          <span><strong>Tesis</strong><small>Gestión de información visual</small></span>
+        </a>
+        <nav aria-label="Navegación principal">
+          {navigation.map(([href, label]) => (
+            <a href={href} aria-current={currentPath === href ? 'page' : undefined}>{label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main id="contenido" class="shell page">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell">Generado desde Markdown · Sin base de datos ni backend</div>
+    </footer>
+  </body>
+</html>
+

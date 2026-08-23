@@ -1,0 +1,53 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+const sources = (await getCollection('sources')).sort((a, b) => a.data.id.localeCompare(b.data.id));
+const types = [...new Set(sources.map((source) => source.data.type))];
+---
+
+<BaseLayout title="Bibliografía">
+  <header class="page-header"><div><div class="eyebrow">Biblioteca</div><h1>Bibliografía y análisis</h1><p class="lede"><span id="source-count">{sources.length}</span> fuentes registradas. Cada ficha Markdown alimenta esta matriz.</p></div></header>
+  <div class="filters">
+    <label>Buscar<input id="source-search" type="search" placeholder="Título, autor o tema" /></label>
+    <label>Tipo<select id="source-type"><option value="">Todos</option>{types.map((type) => <option value={type}>{type}</option>)}</select></label>
+    <label>Lectura<select id="source-reading"><option value="">Todos</option><option value="pendiente">Pendiente</option><option value="en_curso">En curso</option><option value="terminada">Terminada</option></select></label>
+    <label>Análisis<select id="source-analysis"><option value="">Todos</option><option value="pendiente">Pendiente</option><option value="en_curso">En curso</option><option value="terminada">Terminada</option></select></label>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ID</th><th>Fuente</th><th>Tipo</th><th>Descarga</th><th>Lectura</th><th>Análisis</th><th>Prioridad</th></tr></thead>
+      <tbody>
+        {sources.map((entry) => (
+          <tr data-source-row data-search={`${entry.data.title} ${entry.data.authors} ${entry.data.topics.join(' ')}`.toLowerCase()} data-type={entry.data.type} data-reading={entry.data.reading_status} data-analysis={entry.data.analysis_status}>
+            <td class="mono">{entry.data.id}</td>
+            <td><a href={`/bibliografia/${entry.id}`}><strong>{entry.data.title}</strong></a><div class="list-item__meta">{entry.data.authors}{entry.data.year ? ` · ${entry.data.year}` : ''}</div></td>
+            <td>{entry.data.type}</td>
+            <td><StatusBadge status={entry.data.download_status} /></td>
+            <td><StatusBadge status={entry.data.reading_status} /></td>
+            <td><StatusBadge status={entry.data.analysis_status} /></td>
+            <td>{entry.data.priority}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="empty" id="source-empty" hidden>No hay fuentes que coincidan con los filtros.</p>
+  </div>
+  <script is:inline>
+    const sourceControls = ['source-search', 'source-type', 'source-reading', 'source-analysis'].map((id) => document.getElementById(id));
+    const sourceRows = [...document.querySelectorAll('[data-source-row]')];
+    const filterSources = () => {
+      const [search, type, reading, analysis] = sourceControls.map((control) => control.value.trim().toLowerCase());
+      let visible = 0;
+      sourceRows.forEach((row) => {
+        const matches = (!search || row.dataset.search.includes(search)) && (!type || row.dataset.type === type) && (!reading || row.dataset.reading === reading) && (!analysis || row.dataset.analysis === analysis);
+        row.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      document.getElementById('source-count').textContent = visible;
+      document.getElementById('source-empty').hidden = visible !== 0;
+    };
+    sourceControls.forEach((control) => control.addEventListener('input', filterSources));
+  </script>
+</BaseLayout>
+

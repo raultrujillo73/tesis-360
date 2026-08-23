@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.astro/
+.DS_Store
+
+# PDFs y otros materiales que no deben publicarse.
+bibliografia/archivos-locales/*
+!bibliografia/archivos-locales/.gitkeep
+
+# Datos personales o sensibles nunca deben entrar al repositorio público.
+privado/
+

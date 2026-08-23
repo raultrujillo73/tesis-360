@@ -1,0 +1,64 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+
+const phases = (await getCollection('phases')).sort((a, b) => a.data.order - b.data.order);
+const tasks = phases.flatMap((phase) => phase.data.tasks.map((task) => ({ ...task, phaseId: phase.data.id, phaseTitle: phase.data.title })));
+const statuses = [...new Set(tasks.map((task) => task.status))];
+const priorities = [...new Set(tasks.map((task) => task.priority).filter(Boolean))];
+---
+
+<BaseLayout title="Tareas">
+  <header class="page-header">
+    <div>
+      <div class="eyebrow">Ejecución</div>
+      <h1>Tareas y estados</h1>
+      <p class="lede"><span id="task-count">{tasks.length}</span> tareas visibles. Filtra sin modificar los Markdown.</p>
+    </div>
+  </header>
+
+  <div class="filters" data-filters="tasks">
+    <label>Buscar<input id="task-search" type="search" placeholder="ID, título o responsable" /></label>
+    <label>Fase<select id="task-phase"><option value="">Todas</option>{phases.map((phase) => <option value={phase.data.id}>{phase.data.id}</option>)}</select></label>
+    <label>Estado<select id="task-status"><option value="">Todos</option>{statuses.map((status) => <option value={status}>{status.replaceAll('_', ' ')}</option>)}</select></label>
+    <label>Prioridad<select id="task-priority"><option value="">Todas</option>{priorities.map((priority) => <option value={priority!}>{priority}</option>)}</select></label>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>ID</th><th>Tarea</th><th>Fase</th><th>Estado</th><th>Prioridad</th><th>Responsable</th></tr></thead>
+      <tbody id="task-rows">
+        {tasks.map((task) => (
+          <tr data-row data-search={`${task.id} ${task.title} ${task.responsible ?? ''}`.toLowerCase()} data-phase={task.phaseId} data-status={task.status} data-priority={task.priority ?? ''}>
+            <td class="mono">{task.id}</td>
+            <td><strong>{task.title}</strong></td>
+            <td><a href={`/fases/${task.phaseId}`}>{task.phaseId}</a></td>
+            <td><StatusBadge status={task.status} /></td>
+            <td>{task.priority ?? '—'}</td>
+            <td>{task.responsible ?? '—'}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+    <p class="empty" id="task-empty" hidden>No hay tareas que coincidan con los filtros.</p>
+  </div>
+
+  <script is:inline>
+    const controls = ['task-search', 'task-phase', 'task-status', 'task-priority'].map((id) => document.getElementById(id));
+    const rows = [...document.querySelectorAll('[data-row]')];
+    const update = () => {
+      const [search, phase, status, priority] = controls.map((control) => control.value.trim().toLowerCase());
+      let visible = 0;
+      rows.forEach((row) => {
+        const matches = (!search || row.dataset.search.includes(search)) && (!phase || row.dataset.phase.toLowerCase() === phase) && (!status || row.dataset.status === status) && (!priority || row.dataset.priority.toLowerCase() === priority);
+        row.hidden = !matches;
+        if (matches) visible += 1;
+      });
+      document.getElementById('task-count').textContent = visible;
+      document.getElementById('task-empty').hidden = visible !== 0;
+    };
+    controls.forEach((control) => control.addEventListener('input', update));
+  </script>
+</BaseLayout>
+

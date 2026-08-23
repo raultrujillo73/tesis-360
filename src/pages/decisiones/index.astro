@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import StatusBadge from '@/components/StatusBadge.astro';
+import { formatDate } from '@/lib/project';
+
+const decisions = (await getCollection('decisions')).sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout title="Decisiones">
+  <header class="page-header">
+    <div><div class="eyebrow">Trazabilidad</div><h1>Decisiones</h1><p class="lede">Registro de decisiones adoptadas, provisionales, pendientes y descartadas.</p></div>
+  </header>
+  <div class="card">
+    <ul class="list">
+      {decisions.map((entry) => (
+        <li class="list-item">
+          <div class="list-item__main">
+            <a href={`/decisiones/${entry.id}`}><span class="mono">{entry.data.id}</span> · {entry.data.title}</a>
+            <div class="list-item__meta">{entry.data.reason} · {formatDate(entry.data.date)}</div>
+          </div>
+          <StatusBadge status={entry.data.status} />
+        </li>
+      ))}
+    </ul>
+  </div>
+</BaseLayout>
+
