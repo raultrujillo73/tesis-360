@@ -2,7 +2,7 @@
 id: F5
 order: 5
 title: DELIMITACIÓN Y CASO DE ESTUDIO
-status: pendiente
+status: en_curso
 objective: ""
 tasks:
   - id: F5-T01
@@ -31,12 +31,12 @@ tasks:
     notes: "- **Meta:** 2–4 alternativas."
   - id: F5-T04
     title: Evaluar proyecto histórico
-    status: pendiente
+    status: en_curso
     priority: null
     responsible: R+GPT
     deliverable: null
     completion_criteria: null
-    notes: "- **Inventariar:** planos, fechas, fotos, 360°, base de datos, permisos, calidad, continuidad temporal, posibilidad de tareas."
+    notes: "- **Inventariar:** planos, fechas, fotos, 360°, base de datos, permisos, calidad, continuidad temporal, posibilidad de tareas.\n- Avance registrado: el caso histórico 3A cuenta con mapas, puntos de captura y fotografías suficientes para desarrollo conceptual y posibles pilotos; no queda fijado como dataset definitivo de evaluación."
   - id: F5-T05
     title: Buscar proyecto nuevo accesible
     status: pendiente

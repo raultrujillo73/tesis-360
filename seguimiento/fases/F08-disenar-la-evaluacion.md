@@ -2,15 +2,15 @@
 id: F8
 order: 8
 title: DISEÑAR LA EVALUACIÓN
-status: pendiente
+status: en_curso
 objective: ""
 tasks:
   - id: F8-T01
     title: Definir efecto a medir
-    status: pendiente
+    status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: null
+    deliverable: Definición conceptual de la consulta de información visual como función evaluable y de la capacidad de resolver consultas como resultado principal.
     completion_criteria: null
     notes: "- **Candidatos:** recuperabilidad, contexto espacial, contexto temporal, comparabilidad."
   - id: F8-T02

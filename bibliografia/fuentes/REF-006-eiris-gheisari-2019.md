@@ -1,7 +1,7 @@
 ---
 id: REF-006
-title: "Eiris y Gheisari (2019) — fotografía 360° en AEC"
-authors: "Eiris & Gheisari"
+title: "360-Degree Panoramas as a Reality Capturing Technique in Construction Domain: Applications and Limitations"
+authors: "R. Eiris Pereira & M. Gheisari"
 year: 2019
 type: paper
 venue: "Por verificar"
@@ -18,4 +18,4 @@ intended_use: [antecedentes, estado-del-arte]
 
 # Ficha
 
-Analizada como parte de la primera ronda internacional y de la comparación transversal. La referencia bibliográfica completa debe verificarse contra la fuente original.
+Analizada como parte de la primera ronda internacional y de la comparación transversal. En D1 sitúa 360° dentro de reality capture y delimita sus aplicaciones y limitaciones; los metadatos de publicación restantes deben verificarse contra la fuente original.

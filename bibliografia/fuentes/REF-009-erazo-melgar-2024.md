@@ -1,11 +1,11 @@
 ---
 id: REF-009
-title: "Erazo-Rondinel y Melgar (2024) — documentación visual de construcción"
-authors: "Erazo-Rondinel & Melgar"
+title: "Exploring the Benefits of 360-Degree Panoramas for Construction Project Monitoring and Control"
+authors: "A. A. Erazo-Rondinel & M. A. Melgar"
 year: 2024
 type: paper
 venue: "Por verificar"
-doi: ""
+doi: "https://doi.org/10.3390/IOCBD2023-16409"
 openalex: ""
 url: ""
 priority: P1

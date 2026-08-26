@@ -1,5 +1,7 @@
 ---
 tipo: cierre-decision-conceptual
+title: "D1 — Cierre de definición conceptual de la tesis 360°"
+version: "1.0"
 decision: D1
 fecha: 2026-08-25
 proyecto: Tesis 360° — gestión de información visual

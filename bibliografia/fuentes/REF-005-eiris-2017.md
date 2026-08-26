@@ -1,11 +1,11 @@
 ---
 id: REF-005
-title: "Eiris et al. (2017) — fotografía 360° en construcción"
-authors: "Eiris et al."
+title: "Using 360-Degree Interactive Panoramas to Develop Virtual Representations of Construction Sites"
+authors: "R. Eiris Pereira, H. Izadi Moud & M. Gheisari"
 year: 2017
 type: paper
-venue: "Por verificar"
-doi: ""
+venue: "Joint Conference on Computing in Construction, 775–782"
+doi: "https://doi.org/10.24928/JC3-2017/0122"
 openalex: ""
 url: ""
 priority: P0
@@ -18,4 +18,4 @@ intended_use: [antecedentes, estado-del-arte, d1]
 
 # Ficha
 
-Revisada focalizadamente durante el cierre exploratorio. El workflow panorámico respalda captura, authoring, inmersión y distribución, pero no formaliza en el paper una gestión documental longitudinal completa. La referencia bibliográfica final aún debe verificarse.
+Revisada focalizadamente durante el cierre exploratorio. El workflow panorámico respalda captura, authoring, inmersión y distribución, pero no formaliza en el paper una gestión documental longitudinal completa.

@@ -1,13 +1,13 @@
 ---
 id: REF-004
-title: "Wu (2009) — PhotoScope (tesis completa)"
-authors: "Wu"
+title: "Visualizing Things in Construction Photos: Time, Spatial Coverage, and Content for Construction Management"
+authors: "F. Wu"
 year: 2009
 type: tesis
-venue: "Por verificar"
+venue: "MSc thesis, University of Victoria"
 doi: ""
 openalex: ""
-url: ""
+url: "http://hdl.handle.net/1828/1481"
 priority: P0
 download_status: terminada
 reading_status: terminada
@@ -18,4 +18,4 @@ intended_use: [estado-del-arte, marco-conceptual, d1, evaluacion]
 
 # Ficha
 
-Se analizó focalizadamente la tesis completa durante el cierre exploratorio. Sustenta que las fotografías pueden servir como evidencia para responder preguntas de construcción y que pueden diseñarse tareas de consulta plausibles. La referencia bibliográfica final aún debe verificarse.
+Se analizó focalizadamente la tesis completa durante el cierre exploratorio. Sustenta tareas profesionales basadas en espacio, tiempo y estado/progreso, y la utilización de fotografías como evidencia para responder preguntas de construcción.

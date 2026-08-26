@@ -1,11 +1,11 @@
 ---
 id: REF-017
-title: "Wang et al. (2023) — construction image retrieval"
+title: "Content-Based Image Retrieval for Construction Site Images: Leveraging Deep Learning–Based Object Detection"
 authors: "Wang et al."
 year: 2023
 type: paper
 venue: "Por verificar"
-doi: ""
+doi: "https://doi.org/10.1061/JCCEE5.CPENG-5473"
 openalex: ""
 url: ""
 priority: P2
@@ -19,4 +19,3 @@ intended_use: [bibliografia-bajo-demanda, d1]
 # Ficha
 
 Fuente complementaria identificada durante el cierre exploratorio. Metadatos bibliográficos y pertinencia final pendientes de verificación.
-

@@ -2,7 +2,7 @@
 id: D2
 order: 2
 title: BRECHA
-status: pendiente
+status: siguiente
 after_phase: F4
 ---
 

@@ -2,7 +2,7 @@
 id: F3
 order: 3
 title: MARCO CONCEPTUAL Y PROBLEMÁTICA
-status: pendiente
+status: en_curso
 objective: ""
 tasks:
   - id: F3-T01
@@ -23,39 +23,39 @@ tasks:
     notes: null
   - id: F3-T03
     title: Construir definición de gestión de información visual
-    status: pendiente
+    status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: null
+    deliverable: Definición operacional de gestión de información visual en el cierre conceptual D1.
     completion_criteria: null
     notes: "- **Regla:** indicar claramente cómo se deriva de literatura."
   - id: F3-T04
     title: Estudiar recuperación de fotografías
-    status: pendiente
+    status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: null
+    deliverable: Distinción conceptual entre acceso, navegación, recuperación, interpretación y consulta en el cierre D1.
     completion_criteria: null
     notes: "- **Fuentes núcleo:** Brilakis, PhotoScope y trabajos recientes."
   - id: F3-T05
     title: Estudiar contextualización espacial
-    status: pendiente
+    status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: null
+    deliverable: Definición de contextualización espacial como parte del contexto estructural mínimo adoptado en D1.
     completion_criteria: null
     notes: null
   - id: F3-T06
     title: Estudiar contextualización temporal
-    status: pendiente
+    status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: null
+    deliverable: Definición de contextualización temporal como parte del contexto estructural mínimo adoptado en D1.
     completion_criteria: null
     notes: null
   - id: F3-T07
     title: Estudiar comparabilidad histórica
-    status: pendiente
+    status: en_curso
     priority: null
     responsible: R+GPT
     deliverable: null
@@ -63,18 +63,18 @@ tasks:
     notes: null
   - id: F3-T08
     title: Definir papel específico de 360°
-    status: pendiente
+    status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: null
+    deliverable: Decisión de tratar la fotografía 360° como técnica de captura, con capacidades y límites definidos en D1.
     completion_criteria: null
     notes: "- **Separar:** capacidades, limitaciones y problemas que 360° no resuelve."
   - id: F3-T09
     title: Ubicar 360° dentro de Reality Capture
-    status: pendiente
+    status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: null
+    deliverable: Ubicación de 360° dentro de reality capture y sus límites, sustentada en el cierre D1.
     completion_criteria: null
     notes: "- **Alcance:** solo lo necesario."
 ---

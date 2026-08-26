@@ -2,7 +2,7 @@
 id: D1
 order: 1
 title: DEFINICIÓN CONCEPTUAL
-status: siguiente
+status: cumplido
 after_phase: F2
 ---
 

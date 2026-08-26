@@ -2,7 +2,8 @@
 tipo: informe-de-avance
 fecha: 2026-08-25
 origen: ChatGPT
-estado_procesamiento: pendiente
+estado_procesamiento: procesado
+procesado_el: 2026-08-26
 ---
 
 # Avance — Cierre de D1: definición conceptual de la tesis 360°

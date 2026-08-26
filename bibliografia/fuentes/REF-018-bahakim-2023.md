@@ -7,7 +7,7 @@ type: tesis
 venue: "The American University in Cairo"
 doi: ""
 openalex: ""
-url: ""
+url: "https://fount.aucegypt.edu/etds/2031"
 priority: P0
 download_status: terminada
 reading_status: terminada
@@ -34,4 +34,3 @@ Antecedente internacional núcleo y muy cercano, incorporado después del cierre
 ## Implicación para la tesis
 
 La posible diferencia no debe basarse únicamente en metodología 360°, puntos persistentes, recaptura, plano, fecha, historial o acceso básico. D1 debe precisar la necesidad informacional que la documentación permitiría resolver.
-
