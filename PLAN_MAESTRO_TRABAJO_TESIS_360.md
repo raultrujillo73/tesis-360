@@ -1,10 +1,10 @@
 ---
 title: "Plan Maestro de Trabajo — Tesis 360° / Gestión de Información Visual"
 version: "0.1"
-last_updated: "2026-08-22"
+last_updated: "2026-08-27"
 project_status: "En desarrollo"
-current_phase: "Fase 1 — Organización y biblioteca bibliográfica"
-next_milestone: "Construir biblioteca de fuentes y comenzar análisis sistemático"
+current_phase: "Fase 3 — Marco conceptual y problemática"
+next_milestone: "D3 — Alcance y caso"
 source_of_truth: true
 ---
 
@@ -190,11 +190,11 @@ Los extractos exactos servirán como notas de investigación para localizar el a
 
 # 3. ESTADO ACTUAL DEL PROYECTO
 
-**Última actualización:** 2026-08-22
+**Última actualización:** 2026-08-27
 
 ## 3.1 Fase actual
 
-> **Organización de investigación y preparación de biblioteca bibliográfica.**
+> **Formulación académica posterior al cierre de D1 y F4-T06.**
 
 ## 3.2 Ya existe
 
@@ -216,7 +216,7 @@ Los extractos exactos servirán como notas de investigación para localizar el a
 ## 3.3 Decisiones abiertas principales
 
 - 🔴 nombre académico definitivo del fenómeno actualmente denominado “gestión de información visual”;
-- 🔴 brecha exacta;
+- ✅ brecha de trabajo cerrada provisionalmente y trazable;
 - 🔴 título definitivo;
 - 🔴 dimensiones e indicadores;
 - 🔴 proyecto/caso final;
@@ -227,7 +227,7 @@ Los extractos exactos servirán como notas de investigación para localizar el a
 
 ## 3.4 Próxima acción concreta
 
-> **Descargar, ordenar y comenzar a analizar sistemáticamente la bibliografía prioritaria.**
+> **Transformar D1, la brecha de trabajo y la ruta B/B+ en situación problemática, problema investigable, pregunta, objetivos, hipótesis candidata y evidencia necesaria, sin cerrar todavía la intensidad de la afirmación central ni el diseño.**
 
 ---
 
@@ -507,6 +507,11 @@ Responder antes de cerrar terminología:
 - **Responsable:** R+GPT
 - **Alcance:** solo lo necesario.
 
+### F3-T10 — Formular arquitectura académica desde D1 y F4-T06
+- **Responsable:** R+GPT
+- **Entregable:** situación problemática, problema investigable, pregunta general, objetivo general, objetivos específicos, hipótesis candidata y evidencia necesaria para contrastarla.
+- **Límite:** no cerrar aún la intensidad de la afirmación central, variables, indicadores, baseline, diseño, muestra, instrumento, título ni caso definitivo.
+
 ---
 
 # 11. FASE 4 — ESTADO DEL ARTE Y BRECHA
@@ -531,6 +536,9 @@ Responder antes de cerrar terminología:
 ### F4-T06 — Elegir brecha provisional
 - **Responsable:** R+GPT
 - **Criterio:** específica, verificable y ejecutable.
+- **Estado:** cerrada provisionalmente y trazable el 2026-08-26. Ver `investigacion/estado-del-arte/CIERRE_F4_T06_BRECHA_INVESTIGACION_TESIS_360.md`.
+- **Brecha de trabajo:** en el corpus revisado no se identificó una evaluación task-based de la consulta humana de información retrospectiva sobre una obra mediante un historial fotográfico 360° estructurado espacial y temporalmente.
+- **Política bibliográfica:** priorizar 2021–2026 para caracterizar el estado actual; conservar y acompañar con literatura reciente a Shih et al. (2001/2006) y Wu & Tory (2009) por ser antecedentes directos seminales.
 
 ---
 
@@ -539,6 +547,8 @@ Responder antes de cerrar terminología:
 No cerrar diseño definitivo hasta poder explicar en menos de un minuto:
 
 > **Qué existe, qué falta y qué investigaremos nosotros.**
+
+**Estado:** cumplido provisionalmente y trazable mediante F4-T06. La siguiente decisión no es la brecha, sino la intensidad de la afirmación central y su traducción a problema, pregunta, objetivos, hipótesis y evidencia.
 
 ---
 

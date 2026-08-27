@@ -34,3 +34,7 @@ Antecedente internacional núcleo y muy cercano, incorporado después del cierre
 ## Implicación para la tesis
 
 La posible diferencia no debe basarse únicamente en metodología 360°, puntos persistentes, recaptura, plano, fecha, historial o acceso básico. D1 debe precisar la necesidad informacional que la documentación permitiría resolver.
+
+## Uso en F4-T06
+
+Se mantiene como el antecedente moderno más cercano de documentación longitudinal 360°. Su evaluación no operacionaliza consultas retrospectivas como tareas con respuestas verificables, por lo que se clasifica como antecedente núcleo categoría B, no como equivalente A.

@@ -1,5 +1,7 @@
 ---
 tipo: cierre-brecha-investigacion
+title: "F4-T06 — Cierre de brecha de investigación y matriz final A/B/C"
+version: "1.0"
 fecha: 2026-08-26
 proyecto: Tesis 360° — gestión de información visual
 hito: F4-T06

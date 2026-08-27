@@ -77,6 +77,14 @@ tasks:
     deliverable: Ubicación de 360° dentro de reality capture y sus límites, sustentada en el cierre D1.
     completion_criteria: null
     notes: "- **Alcance:** solo lo necesario."
+  - id: F3-T10
+    title: Formular la arquitectura académica a partir de D1 y F4-T06
+    status: pendiente
+    priority: P0
+    responsible: R+GPT
+    deliverable: Situación problemática, problema investigable, pregunta general, objetivo general, objetivos específicos, hipótesis candidata y evidencia necesaria para contrastarla.
+    completion_criteria: No elegir por defecto la intensidad de la afirmación central ni cerrar variables, indicadores, diseño, muestra, instrumento, baseline o título.
+    notes: "Usar la ruta B/B+ y mantener abierta la decisión entre desarrollar y evaluar, determinar la capacidad, evaluar la eficacia u otra formulación equivalente."
 ---
 
 # F3 — MARCO CONCEPTUAL Y PROBLEMÁTICA

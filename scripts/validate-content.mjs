@@ -58,7 +58,7 @@ for (const phase of phases) {
 }
 
 if (phases.length !== 22) errors.push(`Se esperaban 22 fases y existen ${phases.length}`);
-if (taskIds.size !== 174) errors.push(`Se esperaban 174 tareas y existen ${taskIds.size}`);
+if (taskIds.size !== 175) errors.push(`Se esperaban 175 tareas y existen ${taskIds.size}`);
 
 const milestoneIds = new Set();
 for (const item of milestones) {
@@ -94,4 +94,3 @@ if (errors.length) {
 }
 
 console.log(`Contenido válido: ${phases.length} fases, ${taskIds.size} tareas, ${milestones.length} hitos, ${decisions.length} decisiones, ${logs.length} entradas de log y ${sources.length} fuentes.`);
-
