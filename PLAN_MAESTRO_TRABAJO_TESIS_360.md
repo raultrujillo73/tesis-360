@@ -1,10 +1,10 @@
 ---
 title: "Plan Maestro de Trabajo — Tesis 360° / Gestión de Información Visual"
 version: "0.1"
-last_updated: "2026-08-27"
+last_updated: "2026-09-01"
 project_status: "En desarrollo"
-current_phase: "Fase 3 — Marco conceptual y problemática"
-next_milestone: "D3 — Alcance y caso"
+current_phase: "Fase 11 — Extraer el nuevo Plan de Tesis"
+next_milestone: "D5A — Nuevo Plan de Tesis 360° — Borrador Integral V1"
 source_of_truth: true
 ---
 
@@ -190,11 +190,11 @@ Los extractos exactos servirán como notas de investigación para localizar el a
 
 # 3. ESTADO ACTUAL DEL PROYECTO
 
-**Última actualización:** 2026-08-27
+**Última actualización:** 2026-09-01
 
 ## 3.1 Fase actual
 
-> **Formulación académica posterior al cierre de D1 y F4-T06.**
+> **Preparación del Nuevo Plan de Tesis 360° — Borrador Integral V1, a partir del cierre de formulación base.**
 
 ## 3.2 Ya existe
 
@@ -207,7 +207,7 @@ Los extractos exactos servirán como notas de investigación para localizar el a
 - ✅ `ingenieria_inversa_matriz_tesis_360.md`.
 - ✅ `ejemplo_plan_tesis_ruta_1_gestion_informacion_visual.md`.
 - ✅ `ejemplo_plan_y_tesis_ruta_1_v2.md`.
-- ✅ `DOCUMENTO_MAESTRO_TESIS_360_GESTION_INFORMACION_VISUAL.md`.
+- 🔁 `DOCUMENTO_MAESTRO_TESIS_360_GESTION_INFORMACION_VISUAL.md` referido históricamente; su archivo no está disponible en este clon y debe localizarse antes del Borrador Integral V1.
 - ✅ Decisión de usar **gestión de información visual** como eje.
 - ✅ Decisión de retirar Design Thinking del planteamiento nuevo.
 - ✅ Decisión de retirar CBA como componente obligatorio.
@@ -217,8 +217,10 @@ Los extractos exactos servirán como notas de investigación para localizar el a
 
 - 🔴 nombre académico definitivo del fenómeno actualmente denominado “gestión de información visual”;
 - ✅ brecha de trabajo cerrada provisionalmente y trazable;
+- ✅ formulaciones candidatas de problema, objetivos e hipótesis y arquitectura de evaluación;
 - 🔴 título definitivo;
-- 🔴 dimensiones e indicadores;
+- 🔴 título y redacción administrativa definitivos;
+- 🔴 detalles de operacionalización, instrumento y análisis final;
 - 🔴 proyecto/caso final;
 - 🔴 tamaño y perfil de muestra;
 - 🔴 evaluación definitiva;
@@ -227,7 +229,9 @@ Los extractos exactos servirán como notas de investigación para localizar el a
 
 ## 3.4 Próxima acción concreta
 
-> **Transformar D1, la brecha de trabajo y la ruta B/B+ en situación problemática, problema investigable, pregunta, objetivos, hipótesis candidata y evidencia necesaria, sin cerrar todavía la intensidad de la afirmación central ni el diseño.**
+> **Leer al 100 % y auditar el Plan de Tesis aprobado antiguo antes de elaborar el Nuevo Plan de Tesis 360° — Borrador Integral V1.**
+
+La formulación vigente se resume en: gestión de información visual → documentación fotográfica de obra → metodología de documentación fotográfica 360° estructurada espacial y temporalmente → historial visual → resolución de consultas concretas de información visual. Las formulaciones de problema, objetivos e hipótesis son candidatas vigentes; no son todavía redacción administrativa definitiva.
 
 ---
 
@@ -510,7 +514,8 @@ Responder antes de cerrar terminología:
 ### F3-T10 — Formular arquitectura académica desde D1 y F4-T06
 - **Responsable:** R+GPT
 - **Entregable:** situación problemática, problema investigable, pregunta general, objetivo general, objetivos específicos, hipótesis candidata y evidencia necesaria para contrastarla.
-- **Límite:** no cerrar aún la intensidad de la afirmación central, variables, indicadores, baseline, diseño, muestra, instrumento, título ni caso definitivo.
+- **Límite:** mantener carácter candidato; no cerrar redacción administrativa, variables e indicadores definitivos, diseño, muestra, instrumento, título ni caso definitivo.
+- **Estado:** terminado mediante `investigacion/formulacion/CIERRE_FORMULACION_BASE_NUEVO_PLAN_TESIS_360.md`; la formulación resultante es no comparativa y usa “permite”, no “mejora”.
 
 ---
 
@@ -571,6 +576,7 @@ No cerrar diseño definitivo hasta poder explicar en menos de un minuto:
 
 ### F5-T05 — Buscar proyecto nuevo accesible
 - **Responsable:** R
+- **Estado:** existe una posibilidad real de proyecto nuevo de aproximadamente un mes para aplicación prospectiva desde el inicio; será ruta preferible solo si se confirma el acceso. Los datos del proyecto y permisos siguen pendientes.
 - **Ejemplos:** tienda, colegio u otra obra con acceso razonable.
 
 ### F5-T06 — Matriz simple de selección
@@ -677,6 +683,8 @@ Debe quedar definido provisionalmente:
 
 ### F7-T05 — Rediseñar protocolo mínimo
 - **Responsable:** R+GPT
+- **Prioridad:** P0 antes del inicio de un eventual proyecto prospectivo.
+- **Alcance mínimo:** referencias espaciales, puntos, sesiones, permanencia/cambio, periodicidad o criterios, fecha/hora, nomenclatura, puntos inaccesibles, cambios, carga/vinculación y control de calidad.
 
 ### F7-T06 — Rediseñar modelo de información
 - **Responsable:** R+GPT
@@ -712,6 +720,7 @@ Antes de programar la aplicación, la metodología debe poder explicarse **sin m
 ### F8-T04 — Diseñar condición convencional justa
 - **Responsable:** R+GPT
 - **Regla:** no crear una comparación artificialmente mala.
+- **Estado:** descartada para la formulación vigente, que no contempla grupo control, baseline, pretest/postest ni comparación contra carpetas o fotografía convencional.
 
 ### F8-T05 — Diseñar condición metodología 360°
 - **Responsable:** R+GPT
@@ -845,8 +854,9 @@ Antes de datos oficiales deben estar razonablemente definidos:
 
 # 22. FASE 11 — EXTRAER EL NUEVO PLAN DE TESIS
 
-### F11-T01 — Obtener formato institucional vigente
+### F11-T01 — Auditar Plan de Tesis aprobado antiguo y obtener formato institucional vigente
 - **Responsable:** R
+- **Actualización:** lectura completa y auditoría del Plan de Tesis aprobado antiguo antes de redactar el borrador integral V1.
 
 ### F11-T02 — Mapear investigación al formato
 - **Responsable:** R+GPT
@@ -898,6 +908,12 @@ INSTRUMENTO
 
 ### F11-T13 — Levantar observaciones
 - **Responsable:** R+GPT
+
+### Entregable próximo
+
+> **Nuevo Plan de Tesis 360° — Borrador Integral V1**
+
+Se elaborará después de la auditoría completa del Plan aprobado antiguo, usando como fuentes principales el cierre de formulación base, el Documento Maestro cuando esté disponible, D1, F4-T06, los antecedentes analizados y la documentación vigente. No presupone título, caso, participantes, tareas, instrumento o análisis definitivo.
 
 ### F11-T14 — Obtener aprobación
 - **Responsable:** R

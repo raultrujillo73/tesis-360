@@ -2,17 +2,17 @@
 id: F11
 order: 11
 title: EXTRAER EL NUEVO PLAN DE TESIS
-status: pendiente
+status: en_curso
 objective: ""
 tasks:
   - id: F11-T01
-    title: Obtener formato institucional vigente
+    title: Auditar el Plan de Tesis aprobado antiguo y obtener formato institucional vigente
     status: pendiente
-    priority: null
+    priority: P0
     responsible: R
-    deliverable: null
-    completion_criteria: null
-    notes: null
+    deliverable: Auditoría completa del Plan aprobado antiguo y mapa de estructura institucional reutilizable, contenido vigente, contenido a reformular y contenido a eliminar.
+    completion_criteria: Lectura al 100 % del Plan aprobado antiguo antes de iniciar la redacción del Borrador Integral V1.
+    notes: "El Plan aprobado antiguo es fuente principal obligatoria junto con el cierre de formulación base, D1, F4-T06, antecedentes analizados y documentación vigente."
   - id: F11-T02
     title: Mapear investigación al formato
     status: pendiente

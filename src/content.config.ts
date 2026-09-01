@@ -102,7 +102,7 @@ const currentStatus = defineCollection({
 
 const diagnostics = defineCollection({
   loader: glob({
-    pattern: ['estado-del-arte/*.md', 'marco-conceptual/*.md'],
+    pattern: ['estado-del-arte/*.md', 'marco-conceptual/*.md', 'formulacion/*.md'],
     base: './investigacion',
     generateId: ({ entry }) => (entry.split('/').pop()?.replace(/\.md$/, '') ?? entry).toLowerCase(),
   }),

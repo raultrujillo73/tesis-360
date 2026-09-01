@@ -23,20 +23,20 @@ tasks:
     notes: null
   - id: F8-T03
     title: Definir variables/dimensiones provisionales
-    status: pendiente
+    status: terminada
     priority: null
     responsible: R+GPT
-    deliverable: null
+    deliverable: Arquitectura provisional de propuesta, producto aplicado, variable principal, evaluación funcional y evaluación perceptual en el cierre de formulación base.
     completion_criteria: null
-    notes: null
+    notes: "No se fuerza VI/VD como estructura principal; la traducción formal queda abierta solo si el formato institucional o el asesor lo exige."
   - id: F8-T04
     title: Diseñar condición convencional justa
-    status: pendiente
+    status: descartada
     priority: null
     responsible: R+GPT
     deliverable: null
     completion_criteria: null
-    notes: "- **Regla:** no crear una comparación artificialmente mala."
+    notes: "- **Regla:** no crear una comparación artificialmente mala.\n- Descartada para la arquitectura vigente: no se contempla grupo control, baseline ni comparación contra carpetas o fotografía convencional. Solo reabrir ante una decisión académica posterior que cambie la afirmación central."
   - id: F8-T05
     title: Diseñar condición metodología 360°
     status: pendiente

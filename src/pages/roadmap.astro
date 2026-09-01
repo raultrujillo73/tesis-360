@@ -21,7 +21,7 @@ const milestones = await getCollection('milestones');
   <div class="roadmap">
     {phases.map((phase) => {
       const phaseProgress = progress(phase.data.tasks);
-      const milestone = milestones.find((item) => item.data.after_phase === phase.data.id);
+      const phaseMilestones = milestones.filter((item) => item.data.after_phase === phase.data.id);
       return (
         <>
           <article class="phase">
@@ -42,12 +42,12 @@ const milestones = await getCollection('milestones');
               </div>
             </div>
           </article>
-          {milestone && (
+          {phaseMilestones.map((milestone) => (
             <aside class="milestone">
               <strong><a href={`/hitos/${milestone.data.id}`}>{milestone.data.id} · {milestone.data.title}</a></strong>
               <div><StatusBadge status={milestone.data.status} /></div>
             </aside>
-          )}
+          ))}
         </>
       );
     })}

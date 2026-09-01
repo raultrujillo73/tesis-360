@@ -79,12 +79,12 @@ tasks:
     notes: "- **Alcance:** solo lo necesario."
   - id: F3-T10
     title: Formular la arquitectura académica a partir de D1 y F4-T06
-    status: pendiente
+    status: terminada
     priority: P0
     responsible: R+GPT
-    deliverable: Situación problemática, problema investigable, pregunta general, objetivo general, objetivos específicos, hipótesis candidata y evidencia necesaria para contrastarla.
-    completion_criteria: No elegir por defecto la intensidad de la afirmación central ni cerrar variables, indicadores, diseño, muestra, instrumento, baseline o título.
-    notes: "Usar la ruta B/B+ y mantener abierta la decisión entre desarrollar y evaluar, determinar la capacidad, evaluar la eficacia u otra formulación equivalente."
+    deliverable: CIERRE_FORMULACION_BASE_NUEVO_PLAN_TESIS_360.md.
+    completion_criteria: Formulaciones candidatas trazables de problema, objetivo general, tres objetivos específicos, hipótesis, arquitectura metodológica y evidencia de evaluación, sin redacción administrativa definitiva.
+    notes: "La formulación vigente usa 'permite'; no adopta mejora, baseline, grupo control, VI/VD como arquitectura principal ni diseño definitivo."
 ---
 
 # F3 — MARCO CONCEPTUAL Y PROBLEMÁTICA

@@ -60,11 +60,11 @@ tasks:
   - id: F7-T05
     title: Rediseñar protocolo mínimo
     status: pendiente
-    priority: null
+    priority: P0
     responsible: R+GPT
     deliverable: null
     completion_criteria: null
-    notes: null
+    notes: "Prioridad antes del inicio de un eventual proyecto prospectivo. Debe cubrir referencias espaciales, puntos, sesiones, permanencia/cambio, periodicidad o criterios, fecha/hora, nomenclatura, puntos inaccesibles, cambios, carga/vinculación y control mínimo de calidad. No se desarrolla en este cierre."
   - id: F7-T06
     title: Rediseñar modelo de información
     status: pendiente

@@ -4,6 +4,9 @@ fecha: 2026-08-31
 proyecto: Tesis 360° — gestión de información visual
 estado: vigente
 proposito: base-academica-para-nuevo-plan-de-tesis
+origen: GitHub
+estado_procesamiento: procesado
+procesado_el: 2026-09-01
 ---
 
 # Cierre de formulación base para el nuevo Plan de Tesis 360°

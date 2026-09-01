@@ -68,7 +68,7 @@ for (const item of milestones) {
   if (!milestoneStates.has(item.status)) errors.push(`${item.file}: estado de hito inválido ${item.status}`);
   if (!phaseIds.has(item.after_phase)) errors.push(`${item.file}: fase inexistente ${item.after_phase}`);
 }
-if (milestones.length !== 7) errors.push(`Se esperaban 7 hitos y existen ${milestones.length}`);
+if (milestones.length !== 8) errors.push(`Se esperaban 8 hitos y existen ${milestones.length}`);
 
 const decisionIds = new Set();
 for (const item of decisions) {

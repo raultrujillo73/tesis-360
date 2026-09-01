@@ -1,6 +1,6 @@
 ---
 id: D6
-order: 6
+order: 7
 title: PLAN APROBADO
 status: pendiente
 after_phase: F11
