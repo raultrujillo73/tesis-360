@@ -229,7 +229,7 @@ Los extractos exactos servirán como notas de investigación para localizar el a
 
 ## 3.4 Próxima acción concreta
 
-> **Leer al 100 % y auditar el Plan de Tesis aprobado antiguo antes de elaborar el Nuevo Plan de Tesis 360° — Borrador Integral V1.**
+> **F11-T02 — FASE B: reconstruir el esqueleto institucional del Plan 2024 y mapear la formulación 2026 antes de redactar el Nuevo Plan de Tesis 360° — Borrador Integral V1.**
 
 La formulación vigente se resume en: gestión de información visual → documentación fotográfica de obra → metodología de documentación fotográfica 360° estructurada espacial y temporalmente → historial visual → resolución de consultas concretas de información visual. Las formulaciones de problema, objetivos e hipótesis son candidatas vigentes; no son todavía redacción administrativa definitiva.
 
@@ -856,10 +856,13 @@ Antes de datos oficiales deben estar razonablemente definidos:
 
 ### F11-T01 — Auditar Plan de Tesis aprobado antiguo y obtener formato institucional vigente
 - **Responsable:** R
-- **Actualización:** lectura completa y auditoría del Plan de Tesis aprobado antiguo antes de redactar el borrador integral V1.
+- **Estado:** terminado. La auditoría concluyó GO CON PENDIENTES y confirma que no existe un bloqueante académico para iniciar F11-T02.
+- **Evidencia:** `plan_tesis/auditorias/AUDITORIA_PLAN_TESIS_APROBADO_2024_VS_FORMULACION_2026.md`.
 
 ### F11-T02 — Mapear investigación al formato
 - **Responsable:** R+GPT
+- **Prioridad:** P0.
+- **Interpretación operativa:** FASE B — Arquitectura del Nuevo Plan de Tesis: reconstruir el esqueleto institucional, mapear la formulación 2026, definir contenido y extensión por sección, distinguir contenido cerrado/provisional y preparar trazabilidad bibliográfica. No redactar todavía el borrador integral.
 
 ### F11-T03 — Redactar antecedentes
 - **Responsable:** R+GPT
@@ -913,7 +916,7 @@ INSTRUMENTO
 
 > **Nuevo Plan de Tesis 360° — Borrador Integral V1**
 
-Se elaborará después de la auditoría completa del Plan aprobado antiguo, usando como fuentes principales el cierre de formulación base, el Documento Maestro cuando esté disponible, D1, F4-T06, los antecedentes analizados y la documentación vigente. No presupone título, caso, participantes, tareas, instrumento o análisis definitivo.
+Se elaborará después de F11-T02, usando como fuentes principales el cierre de formulación base, D1, F4-T06, fichas y antecedentes analizados, matrices y demás documentación vigente. El Documento Maestro, si se recupera, será una fuente complementaria; su ausencia no bloquea F11-T02 mientras exista trazabilidad suficiente de afirmación → fuente → página/sección → evidencia. No presupone título, caso, participantes, tareas, instrumento o análisis definitivo.
 
 ### F11-T14 — Obtener aprobación
 - **Responsable:** R
@@ -1417,7 +1420,7 @@ Este punto marca el cambio desde una fase de replanteamiento a una fase de **eje
 **Progreso general:** calculado a partir de tareas
 **Bloqueadores:** ninguno  
 **Próximo hito:** D5A — Nuevo Plan de Tesis 360° — Borrador Integral V1
-**Próxima tarea:** F11-T01 — auditar al 100 % el Plan de Tesis aprobado antiguo y obtener formato institucional vigente
+**Próxima tarea:** F11-T02 — FASE B — Arquitectura del Nuevo Plan de Tesis
 
 ## Indicadores sugeridos
 

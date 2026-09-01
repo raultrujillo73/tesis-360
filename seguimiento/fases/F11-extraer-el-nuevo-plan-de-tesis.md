@@ -7,20 +7,20 @@ objective: ""
 tasks:
   - id: F11-T01
     title: Auditar el Plan de Tesis aprobado antiguo y obtener formato institucional vigente
-    status: pendiente
+    status: terminada
     priority: P0
     responsible: R
-    deliverable: Auditoría completa del Plan aprobado antiguo y mapa de estructura institucional reutilizable, contenido vigente, contenido a reformular y contenido a eliminar.
-    completion_criteria: Lectura al 100 % del Plan aprobado antiguo antes de iniciar la redacción del Borrador Integral V1.
-    notes: "El Plan aprobado antiguo es fuente principal obligatoria junto con el cierre de formulación base, D1, F4-T06, antecedentes analizados y documentación vigente."
+    deliverable: AUDITORIA_PLAN_TESIS_APROBADO_2024_VS_FORMULACION_2026.md.
+    completion_criteria: Auditoría concluida como GO CON PENDIENTES; confirma lectura integral del Plan aprobado 2024 y la aptitud para iniciar F11-T02 sin redactar todavía el Borrador Integral V1.
+    notes: "El Plan aprobado 2024 se conserva como referencia institucional, estructural y editorial; prevalece la formulación académica vigente de 2026."
   - id: F11-T02
     title: Mapear investigación al formato
     status: pendiente
-    priority: null
+    priority: P0
     responsible: R+GPT
-    deliverable: null
+    deliverable: "Arquitectura del Nuevo Plan de Tesis: esqueleto institucional, mapeo de formulación 2026, contenido por sección, extensión aproximada, estado cerrado/provisional y trazabilidad bibliográfica."
     completion_criteria: null
-    notes: null
+    notes: "FASE B — Arquitectura del Nuevo Plan de Tesis. No redactar todavía el Borrador Integral V1."
   - id: F11-T03
     title: Redactar antecedentes
     status: pendiente
