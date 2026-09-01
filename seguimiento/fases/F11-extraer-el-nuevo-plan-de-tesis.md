@@ -15,12 +15,12 @@ tasks:
     notes: "El Plan aprobado 2024 se conserva como referencia institucional, estructural y editorial; prevalece la formulación académica vigente de 2026."
   - id: F11-T02
     title: Mapear investigación al formato
-    status: pendiente
+    status: terminada
     priority: P0
     responsible: R+GPT
     deliverable: "Arquitectura del Nuevo Plan de Tesis: esqueleto institucional, mapeo de formulación 2026, contenido por sección, extensión aproximada, estado cerrado/provisional y trazabilidad bibliográfica."
-    completion_criteria: null
-    notes: "FASE B — Arquitectura del Nuevo Plan de Tesis. No redactar todavía el Borrador Integral V1."
+    completion_criteria: "Arquitectura cerrada con resultado LISTA PARA FASE C, esquema institucional FIC definido e índice tentativo limitado a capítulos principales y apartados finales."
+    notes: "Evidencia: ARQUITECTURA_NUEVO_PLAN_TESIS_360_V1.md. No se requiere una nueva verificación del formato FIC; Fase C redactará el Borrador Integral V1 sin desarrollar subcapítulos en el índice tentativo."
   - id: F11-T03
     title: Redactar antecedentes
     status: pendiente

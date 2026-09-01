@@ -229,7 +229,7 @@ Los extractos exactos servirán como notas de investigación para localizar el a
 
 ## 3.4 Próxima acción concreta
 
-> **F11-T02 — FASE B: reconstruir el esqueleto institucional del Plan 2024 y mapear la formulación 2026 antes de redactar el Nuevo Plan de Tesis 360° — Borrador Integral V1.**
+> **FASE C — Redacción del Nuevo Plan de Tesis 360° — Borrador Integral V1, usando la arquitectura ya cerrada.**
 
 La formulación vigente se resume en: gestión de información visual → documentación fotográfica de obra → metodología de documentación fotográfica 360° estructurada espacial y temporalmente → historial visual → resolución de consultas concretas de información visual. Las formulaciones de problema, objetivos e hipótesis son candidatas vigentes; no son todavía redacción administrativa definitiva.
 
@@ -862,7 +862,10 @@ Antes de datos oficiales deben estar razonablemente definidos:
 ### F11-T02 — Mapear investigación al formato
 - **Responsable:** R+GPT
 - **Prioridad:** P0.
-- **Interpretación operativa:** FASE B — Arquitectura del Nuevo Plan de Tesis: reconstruir el esqueleto institucional, mapear la formulación 2026, definir contenido y extensión por sección, distinguir contenido cerrado/provisional y preparar trazabilidad bibliográfica. No redactar todavía el borrador integral.
+- **Estado:** terminado. Resultado: LISTA PARA FASE C.
+- **Evidencia:** `plan_tesis/arquitecturas/ARQUITECTURA_NUEVO_PLAN_TESIS_360_V1.md`.
+- **Resultado operativo:** se conserva el esquema FIC de trece secciones; el índice tentativo contendrá únicamente capítulos principales y apartados finales, sin subcapítulos 1.1, 1.2, etc.
+- **Siguiente etapa:** FASE C — Redacción del Borrador Integral V1. No se requiere una nueva verificación del formato FIC.
 
 ### F11-T03 — Redactar antecedentes
 - **Responsable:** R+GPT
@@ -916,7 +919,7 @@ INSTRUMENTO
 
 > **Nuevo Plan de Tesis 360° — Borrador Integral V1**
 
-Se elaborará después de F11-T02, usando como fuentes principales el cierre de formulación base, D1, F4-T06, fichas y antecedentes analizados, matrices y demás documentación vigente. El Documento Maestro, si se recupera, será una fuente complementaria; su ausencia no bloquea F11-T02 mientras exista trazabilidad suficiente de afirmación → fuente → página/sección → evidencia. No presupone título, caso, participantes, tareas, instrumento o análisis definitivo.
+Se elaborará en FASE C usando como fuentes principales la arquitectura del nuevo Plan, el cierre de formulación base, D1, F4-T06, fichas y antecedentes analizados, matrices y demás documentación vigente. El Documento Maestro, si se recupera, será una fuente complementaria; mientras exista trazabilidad suficiente de afirmación → fuente → página/sección → evidencia, su ausencia no impide la redacción. No presupone título, caso, participantes, tareas, instrumento o análisis definitivo.
 
 ### F11-T14 — Obtener aprobación
 - **Responsable:** R
@@ -1420,7 +1423,7 @@ Este punto marca el cambio desde una fase de replanteamiento a una fase de **eje
 **Progreso general:** calculado a partir de tareas
 **Bloqueadores:** ninguno  
 **Próximo hito:** D5A — Nuevo Plan de Tesis 360° — Borrador Integral V1
-**Próxima tarea:** F11-T02 — FASE B — Arquitectura del Nuevo Plan de Tesis
+**Próxima tarea:** FASE C — Redacción del Nuevo Plan de Tesis 360° — Borrador Integral V1
 
 ## Indicadores sugeridos
 
