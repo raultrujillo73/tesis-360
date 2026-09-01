@@ -58,12 +58,12 @@ tasks:
     notes: null
   - id: F9-T06
     title: Crear escenario convencional
-    status: pendiente
+    status: descartada
     priority: null
     responsible: R+GPT
     deliverable: null
     completion_criteria: null
-    notes: null
+    notes: "Descartada para la formulación vigente: no se contempla escenario convencional, baseline ni comparación entre condiciones. Solo reabrir ante una decisión académica posterior que cambie esa formulación."
   - id: F9-T07
     title: Prueba técnica interna
     status: pendiente

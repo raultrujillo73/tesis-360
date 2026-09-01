@@ -12,7 +12,7 @@ tasks:
     responsible: R+GPT
     deliverable: Definición conceptual de la consulta de información visual como función evaluable y de la capacidad de resolver consultas como resultado principal.
     completion_criteria: null
-    notes: "- **Candidatos:** recuperabilidad, contexto espacial, contexto temporal, comparabilidad."
+    notes: "- **Candidatos:** recuperación de evidencia, contexto espacial, contexto temporal y resolución de consultas."
   - id: F8-T02
     title: Revisar indicadores usados en literatura
     status: pendiente
@@ -46,17 +46,16 @@ tasks:
     completion_criteria: null
     notes: null
   - id: F8-T06
-    title: Diseñar tareas equivalentes
+    title: Diseñar tareas de consulta verificables
     status: pendiente
     priority: null
     responsible: null
     deliverable: null
     completion_criteria: null
     notes: |-
-      - localizar;
-      - fechar;
-      - contextualizar;
-      - comparar.
+      - espacial;
+      - temporal;
+      - estado/evolución.
   - id: F8-T07
     title: Diseñar métricas objetivas
     status: pendiente
@@ -82,16 +81,16 @@ tasks:
       - aplicabilidad;
       - comentarios.
   - id: F8-T09
-    title: Controlar efecto de aprendizaje
+    title: Controlar consistencia de aplicación
     status: pendiente
     priority: null
     responsible: null
     deliverable: null
     completion_criteria: null
     notes: |-
-      - alternar orden;
-      - tareas equivalentes;
-      - evitar pistas.
+      - instrucciones uniformes;
+      - evitar pistas ajenas al historial visual;
+      - registrar incidencias de aplicación.
   - id: F8-T10
     title: Diseñar ficha de registro
     status: pendiente

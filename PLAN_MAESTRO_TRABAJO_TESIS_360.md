@@ -709,7 +709,7 @@ Antes de programar la aplicación, la metodología debe poder explicarse **sin m
 
 ### F8-T01 — Definir efecto a medir
 - **Responsable:** R+GPT
-- **Candidatos:** recuperabilidad, contexto espacial, contexto temporal, comparabilidad.
+- **Candidatos:** recuperación de evidencia, contexto espacial, contexto temporal y resolución de consultas.
 
 ### F8-T02 — Revisar indicadores usados en literatura
 - **Responsable:** R+GPT
@@ -725,11 +725,10 @@ Antes de programar la aplicación, la metodología debe poder explicarse **sin m
 ### F8-T05 — Diseñar condición metodología 360°
 - **Responsable:** R+GPT
 
-### F8-T06 — Diseñar tareas equivalentes
-- localizar;
-- fechar;
-- contextualizar;
-- comparar.
+### F8-T06 — Diseñar tareas de consulta verificables
+- espacial;
+- temporal;
+- estado/evolución.
 
 ### F8-T07 — Diseñar métricas objetivas
 - tiempo;
@@ -743,10 +742,10 @@ Antes de programar la aplicación, la metodología debe poder explicarse **sin m
 - aplicabilidad;
 - comentarios.
 
-### F8-T09 — Controlar efecto de aprendizaje
-- alternar orden;
-- tareas equivalentes;
-- evitar pistas.
+### F8-T09 — Controlar consistencia de aplicación
+- instrucciones uniformes;
+- evitar pistas ajenas al historial visual;
+- registrar incidencias de aplicación.
 
 ### F8-T10 — Diseñar ficha de registro
 - **Responsable:** R+GPT
@@ -794,6 +793,7 @@ VISOR 360°
 
 ### F9-T06 — Crear escenario convencional
 - **Responsable:** R+GPT
+- **Estado:** descartada para la formulación vigente; no se contempla escenario convencional, baseline ni comparación entre condiciones.
 
 ### F9-T07 — Prueba técnica interna
 - **Responsable:** R
@@ -990,6 +990,7 @@ Si el Plan definitivo utiliza esta etapa como evidencia:
 
 ### F13-T10 — Preparar dataset convencional equivalente
 - **Responsable:** R+GPT
+- **Estado:** descartada para la formulación vigente; no se requiere dataset convencional equivalente.
 
 ---
 
@@ -1412,11 +1413,11 @@ Este punto marca el cambio desde una fase de replanteamiento a una fase de **eje
 
 ## Estado actual
 
-**Fase:** F1 — Biblioteca bibliográfica  
-**Progreso general:** por calcular a partir de tareas  
+**Fase:** F11 — Extraer el nuevo Plan de Tesis
+**Progreso general:** calculado a partir de tareas
 **Bloqueadores:** ninguno  
-**Próximo hito:** D1 — definición conceptual  
-**Próxima tarea:** descargar y clasificar fuentes prioritarias
+**Próximo hito:** D5A — Nuevo Plan de Tesis 360° — Borrador Integral V1
+**Próxima tarea:** F11-T01 — auditar al 100 % el Plan de Tesis aprobado antiguo y obtener formato institucional vigente
 
 ## Indicadores sugeridos
 
@@ -1544,36 +1545,21 @@ La tesis se considera terminada cuando:
 
 ## Objetivo
 
-**Comenzar formalmente la biblioteca bibliográfica.**
+**Auditar al 100 % el Plan de Tesis aprobado antiguo antes de elaborar el Nuevo Plan de Tesis 360° — Borrador Integral V1.**
 
 ### Paso 1 — Raúl
-Descargar primeros PDFs prioritarios.
+Localizar y reunir la versión íntegra del Plan de Tesis aprobado antiguo.
 
 ### Paso 2 — Raúl
-Crear chat:
+Preparar la matriz de auditoría del Plan aprobado:
 
-> `01 — Tesis 360 — Papers internacionales`
+> estructura institucional reutilizable → contenido vigente → contenido a reformular → contenido a eliminar
 
 ### Paso 3 — Raúl
-Subir una primera tanda pequeña, preferentemente:
-
-1. Shinde et al. (2023);
-2. Brilakis & Soibelman (2006);
-3. PhotoScope;
-4. Eiris et al. (2017);
-5. Eiris & Gheisari (2019).
+Leer el Plan aprobado al 100 % y registrar la auditoría, sin redactar aún el Borrador Integral V1.
 
 ### Paso 4 — Raúl + GPT
-Analizar uno por uno con ficha estándar.
-
-### Paso 5 — GPT
-Construir/actualizar matriz bibliográfica.
-
-### Paso 6 — Raúl
-Verificar dentro del PDF los pasajes seleccionados.
-
-### Paso 7 — Proyecto
-Actualizar `LOG.md`, `matriz_bibliografica.md` y estados.
+Usar la auditoría, el cierre de formulación base, D1, F4-T06 y los antecedentes ya analizados para preparar posteriormente el Borrador Integral V1.
 
 ---
 

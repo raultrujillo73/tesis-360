@@ -79,12 +79,12 @@ tasks:
     notes: null
   - id: F13-T10
     title: Preparar dataset convencional equivalente
-    status: pendiente
+    status: descartada
     priority: null
     responsible: R+GPT
     deliverable: null
     completion_criteria: null
-    notes: null
+    notes: "Descartada para la formulación vigente: el dataset corresponde al historial visual de la aplicación y no se requiere un dataset convencional equivalente. Solo reabrir ante una decisión académica posterior que incorpore comparación."
 ---
 
 # F13 — PREPARACIÓN FINAL DEL CASO / DATASET
